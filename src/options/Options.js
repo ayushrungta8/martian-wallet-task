@@ -1,23 +1,25 @@
-import logo from '../logo.svg';
-import './Options.css';
+import logo from "../assets/images/logo.svg";
+
+import "./Options.css";
+import { useState } from "react";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
+import Page4 from "./pages/Page4";
+import Page5 from "./pages/Page5";
+import Page6 from "./pages/Page6";
 
 function Options() {
+  const [page, setPage] = useState(6);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/options/Options.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={logo} alt="" className="logo" />
+      {page === 1 && <Page1 setPage={setPage} />}
+      {page === 2 && <Page2 setPage={setPage} />}
+      {page === 3 && <Page3 setPage={setPage} />}
+      {page === 4 && <Page4 setPage={setPage} />}
+      {page === 5 && <Page5 setPage={setPage} />}
+      {page === 6 && <Page6 setPage={setPage} />}
     </div>
   );
 }

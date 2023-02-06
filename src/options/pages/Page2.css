@@ -1,0 +1,96 @@
+.content-modal {
+  width: 845px;
+  height: 644px;
+  padding: 50px 160px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.heading {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  /* identical to box height, or 181% */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+
+.sub-heading {
+  margin-bottom: 44px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* or 138% */
+
+  text-align: center;
+
+  color: #838078;
+}
+
+.recovery-phrase-container {
+  background: #fafafa;
+  /* Light Mode/Border/border-03 */
+
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  padding: 20px 68px;
+  position: relative;
+}
+.recovery-phrase {
+  /* padding: 24px 32px; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 44px;
+  row-gap: 4px;
+}
+.recovery-phrase-word {
+  font-family: "System85 Trial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 173%;
+  /* or 24px */
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.48);
+}
+.copy-btn {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  height: 32px;
+  bottom: -16px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  gap: 12px;
+  padding: 8px 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+.spacer {
+  height: 24px;
+}

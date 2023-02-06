@@ -1,0 +1,142 @@
+.btn-container-dark {
+  margin-top: auto;
+  background: #000000;
+  border-radius: 6px;
+  border: 2px solid black;
+  width: 100%;
+  max-width: 512px;
+  padding: 4px;
+  overflow: hidden;
+}
+.btn-container-light {
+  margin-top: auto;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 2px solid black;
+  width: 100%;
+  max-width: 512px;
+  padding: 4px;
+  overflow: hidden;
+}
+.btn-dark {
+  width: 100%;
+  background: #000;
+  height: 100%;
+  padding: 16px 12px;
+  border: 2.18518px solid #fff;
+  border-radius: 2px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.4745px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-light {
+  width: 100%;
+  background: #ffffff;
+  height: 100%;
+  padding: 16px 12px;
+  border: 2.18518px solid #000000;
+  border-radius: 2px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.4745px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+.btn-dark::after {
+  position: absolute;
+  width: 150%;
+  height: calc(100% - 12px);
+  background-color: #000000;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  /* display: block;
+      clear: both; */
+}
+.btn-light::after {
+  position: absolute;
+  width: 150%;
+  height: calc(100% - 12px);
+  background-color: #fff;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  /* display: block;
+      clear: both; */
+}
+.btn-dark::before {
+  position: absolute;
+  width: calc(100% - 12px);
+  height: 150%;
+  background-color: #000000;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  /* display: block;
+      clear: both; */
+}
+.btn-light::before {
+  position: absolute;
+  width: calc(100% - 12px);
+  height: 150%;
+  background-color: #fff;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  /* display: block;
+      clear: both; */
+}
+.btn-dark:hover::after {
+  height: calc(100% - 24px);
+}
+.btn-dark:hover::before {
+  width: calc(100% - 24px);
+}
+.btn-light:hover::after {
+  height: calc(100% - 24px);
+}
+.btn-light:hover::before {
+  width: calc(100% - 24px);
+}
+.btn-link-dark {
+  font-family: "System85";
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.btn-link-light {
+  font-family: "System85";
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

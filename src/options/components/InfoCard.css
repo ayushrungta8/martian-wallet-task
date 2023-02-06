@@ -1,0 +1,15 @@
+.info-card {
+  width: 100%;
+  background: #fafafa;
+  border-radius: 7px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  /* or 123% */
+
+  color: #838078;
+}
