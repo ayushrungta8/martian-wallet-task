@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "version": "0.0.1",
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "description": "Sample application showing how to create an extension with Create React App",
+  "short_name": "Martian",
+  "name": "Martian Wallet Task",
+  "description": "Sample application for Martian Wallet Task",
   "browser_action": {
     "default_title": "CRE",
     "default_popup": "popup.html"
@@ -18,9 +18,9 @@
     }
   ],
   "icons": {
-    "16": "img/icon-16.png",
-    "48": "img/icon-48.png",
-    "128": "img/icon-128.png"
+    "16": "img/account-image.png",
+    "48": "img/account-image.png",
+    "128": "img/account-image.png"
   },
   "options_page": "options.html",
   "permissions": ["activeTab"],
